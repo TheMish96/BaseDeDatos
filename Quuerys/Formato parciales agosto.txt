@@ -1,0 +1,1 @@
+select a.n_control,nombre,paterno,materno,sum(calificacion)/count(DISTINCT nombre_materia) as promedio from alumnos a inner join registrosalumnos b on a.n_control=b.n_control inner join materias c on c.idmateria=b.idmateria where a.nombre='aladino';

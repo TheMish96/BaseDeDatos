@@ -1,0 +1,80 @@
+drop database if exists escuelados;
+create database escuelados;
+use escuelados;
+create table alumnos(n_control int not null primary key, nombre varchar(35),paterno varchar(35),materno varchar(35),id_carrera int);
+create table carreras(id_carrera int primary key not null auto_increment,nombre_carrera varchar(45));
+create table maestros(clave_docente int not null primary key, nombre_docente varchar(100));
+
+create table materias(idmateria int not null auto_increment primary key,grupo varchar(10) not null, nombre_materia varchar(100), semestre varchar(2),clave_docente int, FOREIGN KEY (clave_docente) REFERENCES maestros(clave_docente));
+
+create table registrosalumnos(n_control int not null,idmateria int not null,calificacion float);
+ALTER TABLE registrosalumnos ADD FOREIGN KEY (n_control) REFERENCES alumnos(n_control);
+ALTER TABLE registrosalumnos ADD FOREIGN KEY(idmateria) REFERENCES materias(idmateria);
+ALTER TABLE alumnos ADD FOREIGN KEY(id_carrera) REFERENCES carreras(id_carrera);
+
+insert into carreras values(1,'Ingieneria Civil');
+insert into carreras(nombre_carrera) values('Ingieneria en Electromecanica');
+insert into carreras(nombre_carrera) values('Ingieneria en Electronica');
+insert into carreras(nombre_carrera) values('Ingieneria en Gestion Empresarial');
+insert into carreras(nombre_carrera) values('Ingieneria en Gestion Empresarial Virtual');
+insert into carreras(nombre_carrera) values('Ingieneria en Sistemas Computacionales');
+insert into carreras(nombre_carrera) values('Ingieneria Industrial');
+insert into carreras(nombre_carrera) values('Licenciatura en Gastronomia');
+
+
+
+ create table login(
+ id_usuario int primary key,
+ usuario varchar(20),
+ contra varchar(20),
+ nivel int);
+
+ insert login values(1,'mirsha',12345,1);
+ insert login values(2,'luis',12345,2);
+
+ 
+alumnos
+ing civil =1-168
+ing mecatrinica=169-293
+ing electronica=294-330
+ing gestion empresarial=331-398
+ing gestion empresarial en linea=399-425
+ing sistemas computacionales=426-571
+ing industrial=572-735
+lic gastronomia=736-817
+
+maestros
+ing civil =2-35
+ing mecatrinica=36-66
+ing electronica=67-80
+ing gestion empresarial=81-101
+ing gestion empresarial en linea=102-113
+ing sistemas computacionales=114-146
+ing industrial=147-189
+lic gastronomia=190-215
+
+materias
+ing civil =2-51
+ing mecatrinica=52-70
+ing electronica=71-88
+ing gestion empresarial=89-112
+ing gestion empresarial en linea=113-127
+ing sistemas computacionales=128-169
+ing industrial=170-224
+lic gastronomia=225-262
+
+civil: 2V0A =262
+mecatronica=263=2N2N,2N4N=264
+
+menos 4
+
+registrosalumnos
+ing civil =2-1323
+ing mecatrinica=1324-2327
+ing electronica=2328-2617
+ing gestion empresarial=2618-3149
+ing gestion empresarial en linea=3150-3328
+ing sistemas computacionales=3329-3434
+ind industriial=3435-5759
+ing industrial=5760-6421
+lic gastronomia=
