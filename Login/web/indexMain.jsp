@@ -57,8 +57,8 @@
         }
         %>
         <ul>
-		<li><a href="#" class="activo">Inicio</a></li>
-		<li><a href="#">Calificaciones</a></li>
+		<li><a href="indexMain.jsp" class="activo">Inicio</a></li>
+		<li><a href="Formato.jsp">Calificaciones</a></li>
 		<li><a href="Parciales.jsp">Parciales</a></li>
 		<li><a href="Tutorias.jsp">Tutorias</a></li>
                 <li><a href='Login.jsp?cerrar=true'>cerrar sesion</a>

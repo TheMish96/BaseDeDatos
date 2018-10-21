@@ -1,1 +1,6 @@
 select a.n_control,nombre,nombre_materia, sum(calificacion)/count(DISTINCT nombre_materia) as promedio,calificacion>60 as materias_aprobadas from alumnos a inner join registrosalumnos b on a.n_control=b.n_control inner join materias c on c.idmateria=b.idmateria where a.nombre='aladino';
+
+select a.n_control ,nombre,nombre_materia,nombre_materia,sum(calificacion)/count(DISTINCT nombre_materia) promedio,COUNT(calificacion>60) as aprobadas from alumnos a inner join registrosalumnos b on a.n_control =b.n_control inner join materias c on c.idmateria=b.idmateria where  a.nombre=1;
+
+
+ select nombre_materia from materias a inner join registrosalumnos b on a.idmateria=b.idmateria inner join alumnos c on c.n_control=b.n_control inner join maestros d on d.clave_docente=a.clave_docente  where id_carrera=1 and semestre=1  and nombre_docente='MARIA LIZBETH JAZO HERNANDEZ';

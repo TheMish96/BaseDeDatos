@@ -28,7 +28,7 @@
     
     <body> 
  <div class="imagen">
-<img src="Imagen/hola.jpg" />
+<img src="Imagen/hola.jpg" WIDTH="1300" HEIGHT="200"/>
 
 </div>       
         <h1>Formulario de acceso</h1>
