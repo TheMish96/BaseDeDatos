@@ -23,7 +23,7 @@ public class Conectar {
     Connection conn;
     String driver= "com.mysql.jdbc.Driver";
     String user= ("root");
-    String password=("tuputisimamadre");
+    String password=("123456789");
     String url= "jdbc:mysql://localhost:3306/escuela";
     
     
