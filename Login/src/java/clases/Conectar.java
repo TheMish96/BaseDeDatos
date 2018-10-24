@@ -22,13 +22,8 @@ import java.util.logging.Logger;
 public class Conectar {
     Connection conn;
     String driver= "com.mysql.jdbc.Driver";
-<<<<<<< HEAD
     String user= ("consulta");
     String password=("123");
-=======
-    String user= ("root");
-    String password=("123456789");
->>>>>>> 8ae920a142522db60dc6f67bbd7bad9280f033e4
     String url= "jdbc:mysql://localhost:3306/escuela";
     
     
