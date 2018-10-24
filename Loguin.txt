@@ -21,17 +21,6 @@ insert into carreras(nombre_carrera) values('Ingieneria en Sistemas Computaciona
 insert into carreras(nombre_carrera) values('Ingieneria Industrial');
 insert into carreras(nombre_carrera) values('Licenciatura en Gastronomia');
 
-
-
- create table login(
- id_usuario int primary key,
- usuario varchar(20),
- contra varchar(20),
- nivel int);
-
- insert login values(1,'mirsha',12345,1);
- insert login values(2,'luis',12345,2);
-
  
 alumnos
 ing civil =1-168

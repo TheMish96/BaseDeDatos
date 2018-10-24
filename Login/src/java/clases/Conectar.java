@@ -22,15 +22,15 @@ import java.util.logging.Logger;
 public class Conectar {
     Connection conn;
     String driver= "com.mysql.jdbc.Driver";
-    String user= ("root");
-    String password=("tuputisimamadre");
+    String user= ("consulta");
+    String password=("123");
     String url= "jdbc:mysql://localhost:3306/escuela";
     
     
     public Conectar(){
     driver= "com.mysql.jdbc.Driver";
-    user= ("root");
-    password=("tuputisimamadre");
+    user= ("consulta");
+    password=("123");
     url= "jdbc:mysql://localhost:3306/escuela";
 } 
     
