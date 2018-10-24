@@ -11,8 +11,13 @@ import java.sql.DriverManager;
 public class Conexion {
     private static Connection conn;
     private static final String driver= "com.mysql.jdbc.Driver";
+<<<<<<< HEAD
     private static final String user= ("consulta");
     private static final String password=("123");
+=======
+    private static final String user= ("root");
+    private static final String password=("123456789");
+>>>>>>> 8ae920a142522db60dc6f67bbd7bad9280f033e4
     private static final String url= "jdbc:mysql://localhost:3306/escuela";
 
 
